@@ -1,15 +1,15 @@
 import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, View, Text, Button } from "react-native";
 
-const Home = () => {
+const SelectPlace = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <Text>Main</Text>
+      <Text>SelectPlace</Text>
       <Button
-        title="Go to SelectTheme"
-        onPress={() => navigation.navigate("SelectTheme")}
+        title="Go to Loading"
+        onPress={() => navigation.navigate("Loading")}
       />
     </View>
   );
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default SelectPlace;
