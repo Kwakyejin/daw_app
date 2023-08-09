@@ -10,7 +10,11 @@ const Stack = createStackNavigator();
 const HotPlaceStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen initialRouteName="HotPlace1" name="HotPlace1" component={HotPlace1} />
+      <Stack.Screen
+        initialRouteName="HotPlace1"
+        name="HotPlace1"
+        component={HotPlace1}
+      />
       <Stack.Screen name="HotPlace2" component={HotPlace2} />
       <Stack.Screen name="HotPlace3" component={HotPlace3} />
       <Stack.Screen name="HotPlace4" component={HotPlace4} />
@@ -19,5 +23,3 @@ const HotPlaceStack = () => {
 };
 
 export default HotPlaceStack;
-
-
